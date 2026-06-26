@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+
+    <style>
+        /* Page background and font styling */
+        body {
+            font-family: Arial;
+            background: #eef2ff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Main weather card container */
+        .card {
+            background: white;
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        /* Input field styling */
+        input {
+            padding: 10px;
+            width: 70%;
+        }
+
+        /* Button styling */
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        /* Weather result section */
+        .weather {
+            margin-top: 20px;
+        }
+
+        /* Weather icon size */
+        .icon {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Main weather container -->
+<div class="card">
+
+    <h2>🌍 Weather Checker</h2>
+
+    <!-- Form sends postcode to Flask backend using GET request -->
+    <form action="/weather-api" method="GET">
+        <input type="text" name="postcode" placeholder="Enter postcode">
+        <br>
+        <button type="submit">Get Weather</button>
+    </form>
+
+    <!-- Only shows weather if data exists -->
+    {% if weather %}
+
+    <div class="weather">
+
+        <!-- Weather icon from backend -->
+        <div class="icon">{{ weather.icon }}</div>
+
+        <!-- Postcode entered by user -->
+        <h3>{{ postcode }}</h3>
+
+        <!-- Weather details -->
+        <p>🌤 {{ weather.description }}</p>
+        <p>🌡 {{ weather.temperature }}°C</p>
+        <p>🥵 {{ weather.feels_like }}°C</p>
+        <p>💧 {{ weather.humidity }}%</p>
+
+    </div>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
