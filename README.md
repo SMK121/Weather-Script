@@ -258,8 +258,8 @@ Displayed in Flask Web Application
 
 * EC2 instance running
 <img width="1435" height="334" alt="image" src="https://github.com/user-attachments/assets/ab3550e5-cda6-4ac7-a4e0-5555ebb788c8" />
-  
 
+  
 * GitHub repository cloned
 <img width="1439" height="297" alt="image" src="https://github.com/user-attachments/assets/02307c90-612b-4bdd-81ba-4380fc68ccb5" />
 
