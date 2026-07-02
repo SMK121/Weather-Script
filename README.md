@@ -21,7 +21,7 @@ The completed application is publicly accessible using the EC2 public IPv4 addre
 
 ---
 
-# 1. Launch the EC2 Instance
+# 1. EC2 Instance
 
 ## Instance Details
 
