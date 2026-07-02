@@ -258,8 +258,9 @@ Displayed in Flask Web Application
 Add screenshots of the following:
 
 * EC2 instance running
-* Security group configuration
-* SSH connection
+<img width="1435" height="334" alt="image" src="https://github.com/user-attachments/assets/ab3550e5-cda6-4ac7-a4e0-5555ebb788c8" />
+  
+
 * GitHub repository cloned
 * Gunicorn running
 * Nginx configuration
