@@ -150,14 +150,17 @@ Check that all files are present.
 ls
 ```
 
-The project should contain files similar to:
+## 📦 Project File Structure
 
-```
-Flask_Weather_api.py
-my_weather_api.py
-utils.py
-templates/
-weather_api_key.txt
+The project contains the following files and folders:
+
+```text
+Flask_Weather_api.py    - Contains the main weather API logic and helper functions.
+my_weather_api.py       - Starts the Flask application and defines the web routes.
+utils.py                - Stores reusable helper functions used throughout the project.
+templates/              - Contains the HTML templates used by the Flask application.
+weather_api_key.txt     - Stores the OpenWeather API key used to authenticate API requests.
+
 ```
 
 ---
