@@ -103,15 +103,29 @@ I used SCP (Secure Copy Protocol) to transfer my Flask project from my local mac
 
 ## 🧾 Command Used
 
-scp -i "Suhaib 610 Key.pem" -r "C:\Users\Suhaib\Documents\Sparta\Training & Project Work\PyCharm\Flask Weather api" ubuntu@108.131.7.199:~
-🧠 What this command does
-scp → Securely transfers files from local machine to a remote server (EC2)
--i "Suhaib 610 Key.pem" → Uses my AWS SSH key for authentication
--r → Recursively copies the entire project folder (including subfolders like templates/)
-"C:\Users\Suhaib\...\Flask Weather api" → My local Flask project directory
-ubuntu@108.131.7.199 → My EC2 instance (Ubuntu user + public IP address)
-:~ → Copies files into the home directory (/home/ubuntu/) on the server
+## 🧠 What this command does
 
+scp Securely transfers files from local machine to a remote server EC2  
+-i "Suhaib 610 Key.pem" Uses my AWS SSH key for authentication  
+-r Recursively copies the entire project folder including subfolders like templates  
+"C: Users Suhaib ... Flask Weather api" My local Flask project directory  
+ubuntu@108.131.7.199 My EC2 instance Ubuntu user plus public IP address  
+:~ Copies files into the home directory /home/ubuntu/ on the server  
+
+---
+
+## 📦 Result
+
+After running this command, my project was successfully copied to:
+
+/home/ubuntu/Flask Weather api/
+
+### This included:
+- Flask backend code  
+- HTML templates  
+- API logic files  
+- Utility scripts
+  
 ---
 
 
