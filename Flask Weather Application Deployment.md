@@ -21,6 +21,21 @@ To make the application suitable for production, Gunicorn is used as the WSGI ap
 * Postcodes.io API
 * OpenWeather API
 
+
+## 📦 Project File Structure
+
+The project contains the following files and folders:
+
+```text
+Flask_Weather_api.py    - Contains the main weather API logic and helper functions.
+my_weather_api.py       - Starts the Flask application and defines the web routes.
+utils.py                - Stores reusable helper functions used throughout the project.
+templates/              - Contains the HTML templates used by the Flask application.
+weather_api_key.txt     - Stores the OpenWeather API key used to authenticate API requests.
+
+```
+  
+
 The completed application is publicly accessible using the EC2 public IPv4 address.
 
 ---
@@ -150,20 +165,6 @@ Check that all files are present.
 ls
 ```
 
-## 📦 Project File Structure
-
-The project contains the following files and folders:
-
-```text
-Flask_Weather_api.py    - Contains the main weather API logic and helper functions.
-my_weather_api.py       - Starts the Flask application and defines the web routes.
-utils.py                - Stores reusable helper functions used throughout the project.
-templates/              - Contains the HTML templates used by the Flask application.
-weather_api_key.txt     - Stores the OpenWeather API key used to authenticate API requests.
-
-```
-
----
 
 # 6. Install Python Dependencies
 
