@@ -255,18 +255,29 @@ Displayed in Flask Web Application
 
 # 11. Screenshots
 
-Add screenshots of the following:
 
 * EC2 instance running
 <img width="1435" height="334" alt="image" src="https://github.com/user-attachments/assets/ab3550e5-cda6-4ac7-a4e0-5555ebb788c8" />
   
 
 * GitHub repository cloned
+<img width="1439" height="297" alt="image" src="https://github.com/user-attachments/assets/02307c90-612b-4bdd-81ba-4380fc68ccb5" />
+
+
+
 * Gunicorn running
+<img width="1393" height="250" alt="image" src="https://github.com/user-attachments/assets/ae478f14-77a5-4402-97d9-117d23ceb4c4" />
+
+
+  
 * Nginx configuration
-* Weather application homepage
-* Weather search results
-* Successful deployment using the EC2 public IP
+<img width="925" height="119" alt="image" src="https://github.com/user-attachments/assets/2c5246ed-56c1-4e65-a0ab-43a7e1b8dab1" />
+
+
+ 
+* Weather search results / Frontend
+<img width="1901" height="1017" alt="image" src="https://github.com/user-attachments/assets/4d36eef3-5856-45e0-8cd4-204ca7bd6af8" />
+
 
 ---
 
