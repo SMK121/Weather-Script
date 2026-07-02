@@ -95,6 +95,27 @@ sudo apt install python3-pip nginx git -y
 
 ---
 
+# 📤 SCP Deployment (File Transfer to EC2)
+
+I used SCP (Secure Copy Protocol) to transfer my Flask project from my local machine to the AWS EC2 server.
+
+---
+
+## 🧾 Command Used
+
+scp -i "Suhaib 610 Key.pem" -r "C:\Users\Suhaib\Documents\Sparta\Training & Project Work\PyCharm\Flask Weather api" ubuntu@108.131.7.199:~
+🧠 What this command does
+scp → Securely transfers files from local machine to a remote server (EC2)
+-i "Suhaib 610 Key.pem" → Uses my AWS SSH key for authentication
+-r → Recursively copies the entire project folder (including subfolders like templates/)
+"C:\Users\Suhaib\...\Flask Weather api" → My local Flask project directory
+ubuntu@108.131.7.199 → My EC2 instance (Ubuntu user + public IP address)
+:~ → Copies files into the home directory (/home/ubuntu/) on the server
+
+---
+
+
+
 # 5. Download the Project
 
 Clone the GitHub repository onto the EC2 instance.
