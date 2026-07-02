@@ -2,9 +2,13 @@
 
 ## Project Overview
 
-This project demonstrates the deployment of a Flask weather application to an AWS EC2 instance running Ubuntu
+Project Overview
 
-The application allows users to enter a UK postcode and retrieve the current weather for that location through a web interface. To achieve this, it first converts the postcode into latitude and longitude using the Postcodes.io API before sending those coordinates to the OpenWeather API to retrieve live weather information.
+This project demonstrates how a Python Flask weather application can be deployed to an AWS EC2 virtual machine running Ubuntu and made accessible over the internet.
+
+The application provides a simple web interface where a user enters a UK postcode. It first sends the postcode to the Postcodes.io API to obtain the corresponding latitude and longitude coordinates. These coordinates are then passed to the OpenWeather API, which returns the current weather conditions for that location. Flask processes the requests and displays the results back to the user in the browser.
+
+To make the application suitable for production, Gunicorn is used as the WSGI application server while Nginx acts as a reverse proxy, forwarding incoming HTTP requests to the Flask application.
 
 ### Technologies Used
 
@@ -23,24 +27,24 @@ The completed application is publicly accessible using the EC2 public IPv4 addre
 
 # 1. EC2 Instance
 
+
 ## Instance Details
 
-An AWS EC2 instance was created with the following configuration:
+An AWS EC2 virtual machine was launched to host the Flask application.
 
-* Cloud Provider: AWS
-* Instance Type: `t3.micro`
-* Operating System: Ubuntu Server
-* Authentication: SSH Key Pair (`.pem`)
+Setting	Value
+Cloud Provider	AWS
+Instance Type	t3.micro
+Operating System	Ubuntu Server
+Authentication	SSH Key Pair (.pem)
 
 ## Security Group Configuration
 
 The following inbound rules were configured:
 
-| Type | Port | Source    | Purpose                                                |
-| ---- | ---: | --------- | ------------------------------------------------------ |
-| SSH  |   22 | My IP     | Secure SSH access to the server                        |
-| HTTP |   80 | 0.0.0.0/0 | Allows public users to access the deployed application |
-
+Type	Port	Source	Purpose
+SSH	22	My IP	Allows secure SSH access to the server
+HTTP	80	0.0.0.0/0	Allows public users to access the deployed application
 ---
 
 # 2. Connect to the EC2 Instance
