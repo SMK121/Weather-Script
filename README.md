@@ -42,9 +42,11 @@ Authentication	SSH Key Pair (.pem)
 
 The following inbound rules were configured:
 
-Type	Port	Source	Purpose
-SSH	22	My IP	Allows secure SSH access to the server
-HTTP	80	0.0.0.0/0	Allows public users to access the deployed application
+| Type | Port | Source | Purpose |
+|------|------|--------|---------|
+| SSH | 22 | My IP | Allows secure SSH access to the server |
+| HTTP | 80 | 0.0.0.0/0 | Allows public users to access the deployed application |
+
 ---
 
 # 2. Connect to the EC2 Instance
