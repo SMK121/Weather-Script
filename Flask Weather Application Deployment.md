@@ -116,16 +116,14 @@ I used SCP (Secure Copy Protocol) to transfer my Flask project from my local mac
 
 ---
 
-## 🧾 Command Used
-
 ## 🧠 What this command does
 
-scp Securely transfers files from local machine to a remote server EC2  
--i "Suhaib 610 Key.pem" Uses my AWS SSH key for authentication  
--r Recursively copies the entire project folder including subfolders like templates  
-"C: Users Suhaib ... Flask Weather api" My local Flask project directory  
-ubuntu@108.131.7.199 My EC2 instance Ubuntu user plus public IP address  
-:~ Copies files into the home directory /home/ubuntu/ on the server  
+scp → Securely transfers files from local machine to a remote EC2 server  
+-i "Suhaib 610 Key.pem" → Uses my AWS SSH key for authentication  
+-r → Recursively copies the entire project folder including subfolders like templates  
+"C: Users Suhaib ... Flask Weather api" → My local Flask project directory  
+ubuntu@108.131.7.199 → My EC2 instance (Ubuntu user plus public IP address)  
+:~ → Copies files into the home directory (/home/ubuntu/) on the server  
 
 ---
 
