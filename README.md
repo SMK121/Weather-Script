@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project demonstrates the deployment of a Flask weather application to an AWS EC2 instance running Ubuntu 24.04.
+This project demonstrates the deployment of a Flask weather application to an AWS EC2 instance running Ubuntu
 
 The application allows users to enter a UK postcode and retrieve the current weather for that location through a web interface. To achieve this, it first converts the postcode into latitude and longitude using the Postcodes.io API before sending those coordinates to the OpenWeather API to retrieve live weather information.
 
@@ -12,7 +12,7 @@ The application allows users to enter a UK postcode and retrieve the current wea
 * Flask
 * Gunicorn
 * Nginx
-* AWS EC2 (Ubuntu 24.04)
+* AWS EC2 Ubuntu 
 * Git & GitHub
 * Postcodes.io API
 * OpenWeather API
@@ -29,7 +29,7 @@ An AWS EC2 instance was created with the following configuration:
 
 * Cloud Provider: AWS
 * Instance Type: `t3.micro`
-* Operating System: Ubuntu Server 24.04 LTS
+* Operating System: Ubuntu Server
 * Authentication: SSH Key Pair (`.pem`)
 
 ## Security Group Configuration
